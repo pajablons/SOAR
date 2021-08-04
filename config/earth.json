@@ -1,0 +1,24 @@
+{
+  "assets": {
+    "model": "earth.bam",
+    "texture": ""
+  },
+  "scale": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  },
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "heading": 0,
+    "pitch": 0,
+    "roll": 0
+  },
+  "rotation": {
+    "dHead": -5,
+    "dPitch": 0,
+    "dRoll": 0
+  }
+}
