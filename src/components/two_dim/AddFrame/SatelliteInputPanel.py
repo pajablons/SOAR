@@ -1,10 +1,13 @@
 import wx
 
 
+# Basic panel for accepting info regarding new satellites
 class SatelliteInputPanel(wx.Panel):
     def __init__(self, parent):
         super().__init__(parent, wx.ID_ANY)
 
+        # Each row: Label | Input area
+        # One row for each of: Latitude, Longitude, Lat Speed, Long Speed
         self.sizer = wx.GridSizer(4, 2, 15, 15)
 
         self.latText = wx.StaticText(self, label='Latitude:')
