@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 
@@ -22,4 +23,4 @@ class Config:
                 raise ValueError(f"File does not exist: '{truePath}'")
             with open(truePath, 'r') as conf:
                 Config.cfgDirectory[filename] = json.load(conf)
-        return Config.cfgDirectory[filename]
+        return copy.deepcopy(Config.cfgDirectory[filename])

@@ -1,0 +1,24 @@
+{
+  "assets": {
+    "model": "point2.glb",
+    "texture": "Target.png"
+  },
+  "scale": {
+    "x": 1.0,
+    "y": 0.4,
+    "z": 1.0
+  },
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "heading": 90,
+    "pitch": 0,
+    "roll": 0
+  },
+  "rotation": {
+    "dHead": 0,
+    "dPitch": 0,
+    "dRoll": 0
+  }
+}

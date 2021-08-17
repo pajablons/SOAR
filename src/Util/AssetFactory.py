@@ -1,7 +1,7 @@
 import os
 
 from direct.showbase import Loader
-from panda3d.core import Filename
+from panda3d.core import Filename, Texture
 
 
 class AssetFactory:
@@ -29,4 +29,7 @@ class AssetFactory:
     @staticmethod
     def loadTexture(filename):
         path = Filename.fromOsSpecific(os.path.join(AssetFactory.assetRoot, filename))
-        return AssetFactory.loader.loadTexture(path)
+        newTex = Texture()
+        newTex.setup2dTexture()
+        newTex.read(path)
+        return newTex
